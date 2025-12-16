@@ -1,0 +1,16 @@
+# Core
+numpy<1.27
+pandas
+joblib
+tqdm
+
+# ML
+scikit-learn==1.6.1
+
+# Audio
+librosa==0.10.2.post1
+soundfile
+
+# Librosa dependency (pin this!)
+numba==0.59.1
+llvmlite==0.42.0
