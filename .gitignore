@@ -11,3 +11,16 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
+# ignore joblibs EXCEPT your final model
+*.joblib
+!rf_key_classifier.joblib
+
+# Ignore raw audio / regenerated artifacts
+audio_features/fmak_wav*/
+audio_features/*.wav
+
+# Ignore older or duplicate feature files
+audio_features/audio_features_with_labels.csv
+
+# Ignore accidental root-level CSVs
+audio_features_with_labels*.csv

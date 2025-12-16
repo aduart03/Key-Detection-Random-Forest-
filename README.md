@@ -8,6 +8,22 @@ This project predicts whether an audio file is in **major** or **minor** mode us
 
 ## Setup
 
+## Dataset Notes
+
+The raw audio dataset (WAV files) is **not included** in this repository due to size constraints.
+
+This project uses **precomputed audio features** stored in:
+audio_features/audio_features_with_labels_plus_tonnetz_cqt.csv
+
+Because of this:
+- `train.py` can run **without raw audio files**
+- Validation accuracy and confusion matrix are reproducible
+- The final trained model is provided as `rf_key_classifier.joblib`
+
+To retrain from raw audio, the full dataset must be downloaded separately and placed in the expected `fmak_wav/` directory structure.
+
+
+
 From the project folder:
 
 ```bash
